@@ -472,13 +472,13 @@ void establecer_intencion_renderizado_bmp(IMAGEN_BMP* imagen, uint32_t modo_rend
 		modo_renderizado != BMP_IR_GRAFICOS &&
 		modo_renderizado != BMP_IR_IMAGENES) {
 		
-		snprintf(error_bmp_x, sizeof(error_bmp_x), "No se reconoce la intenciñn de renderizado.");
+		snprintf(error_bmp_x, sizeof(error_bmp_x), "No se reconoce la intención de renderizado.");
 		return;
 	}
 	
 	if(imagen->dib_info.ver != BMP_DIB_WIN98) {
 		
-		snprintf(error_bmp_x, sizeof(error_bmp_x), "Esta versión del mapa de bits no incluye la intenciñn de renderizado.");
+		snprintf(error_bmp_x, sizeof(error_bmp_x), "Esta versión del mapa de bits no incluye la intención de renderizado.");
 		return;
 	}
 	

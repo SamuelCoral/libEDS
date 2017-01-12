@@ -15,54 +15,54 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\C y C++\EDS_color.c">
+    <ClCompile Include="..\src\EDS_color.c">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\C y C++\EDS_dibujo.c">
+    <ClCompile Include="..\src\EDS_dibujo.c">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\C y C++\EDS_geo.c">
+    <ClCompile Include="..\src\EDS_geo.c">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\C y C++\EDS_texto.c">
+    <ClCompile Include="..\src\EDS_texto.c">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\C y C++\EDS_tipos.c">
+    <ClCompile Include="..\src\EDS_tipos.c">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\C y C++\libbmp.c">
+    <ClCompile Include="..\src\libbmp.c">
       <Filter>Archivos de código fuente</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\C y C++\EDS.h">
+    <ClInclude Include="..\src\EDS.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\C y C++\EDS_color.h">
+    <ClInclude Include="..\src\EDS_color.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\C y C++\EDS_dibujo.h">
+    <ClInclude Include="..\src\EDS_dibujo.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\C y C++\EDS_geo.h">
+    <ClInclude Include="..\src\EDS_geo.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\C y C++\EDS_texto.h">
+    <ClInclude Include="..\src\EDS_texto.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\C y C++\EDS_tipos.h">
+    <ClInclude Include="..\src\EDS_tipos.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\C y C++\libbmp.h">
+    <ClInclude Include="..\src\libbmp.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\C y C++\dibujo_eds.hpp">
+    <ClInclude Include="..\src\dibujo_eds.hpp">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\C y C++\excepcion_eds.hpp">
+    <ClInclude Include="..\src\excepcion_eds.hpp">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\C y C++\imagen_bmp.hpp">
+    <ClInclude Include="..\src\imagen_bmp.hpp">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>

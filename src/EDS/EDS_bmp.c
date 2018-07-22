@@ -204,9 +204,9 @@ void EDS_GuardarBMP(
 
 				if(j > pixeles_byte || k <= 2) {
 
-					comodin[2][0] = j;
+					comodin[2][0] = j - (i + j > imagen->ancho);
 					comodin[2][1] = (imagen->mapa_bits_p[lugares_linea + i] << (bpp < 8 ? 4 : 0)) |
-						(bpp < 8 ? imagen->mapa_bits_p[lugares_linea + i + 1] : 0);
+						(bpp < 8 && i + j <= imagen->ancho ? imagen->mapa_bits_p[lugares_linea + i + 1] : 0);
 					fwrite(comodin[2], 1, 2, archivo);
 					i += j;
 				}

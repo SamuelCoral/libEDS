@@ -57,3 +57,68 @@ void EDS_DibujarLinea(EDS_Imagen* imagen, int32_t x1, int32_t y1, int32_t x2, in
 	EDS_Error[0] = '\0';
 }
 
+
+void EDS_DibujarRectangulo(EDS_Imagen* imagen, int32_t x1, int32_t y1, int32_t x2, int32_t y2, uint32_t color) {
+
+	if(imagen == NULL) {
+		
+		snprintf(EDS_Error, sizeof(EDS_Error), "La imagen de origen está dañada.");
+		return;
+	}
+
+	int32_t i, j;
+
+	if(x1 > x2) {
+		i = x1;
+		x1 = x2;
+		x2 = i;
+	}
+	if(y1 > y2) {
+		j = y1;
+		y1 = y2;
+		y2 = j;
+	}
+
+	for(j = y1; j <= y2; j++) {
+
+		EDS_DibujarPixel(imagen, x1, j, color);
+		EDS_DibujarPixel(imagen, x2, j, color);
+	}
+
+	for(i = ++x1; i < x2; i++) {
+
+		EDS_DibujarPixel(imagen, i, y1, color);
+		EDS_DibujarPixel(imagen, i, y2, color);
+	}
+
+	EDS_Error[0] = '\0';
+}
+
+
+void EDS_DibujarRectanguloSolido(EDS_Imagen* imagen, int32_t x1, int32_t y1, int32_t x2, int32_t y2, uint32_t color) {
+
+	if(imagen == NULL) {
+		
+		snprintf(EDS_Error, sizeof(EDS_Error), "La imagen de origen está dañada.");
+		return;
+	}
+
+	int32_t i, j;
+	
+	if(x1 > x2) {
+		i = x1;
+		x1 = x2;
+		x2 = i;
+	}
+	if(y1 > y2) {
+		j = y1;
+		y1 = y2;
+		y2 = j;
+	}
+
+	for(j = y1; j < y2; j++) for(i = x1; i < x2; i++)
+		EDS_DibujarPixel(imagen, i, j, color);
+
+	EDS_Error[0] = '\0';
+}
+

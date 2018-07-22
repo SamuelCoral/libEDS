@@ -1,0 +1,13 @@
+
+
+#ifndef _EDS_VERSION
+#define _EDS_VERSION
+
+
+#define EDS_VERSION_MAJOR @EDS_VERSION_MAJOR@
+#define EDS_VERSION_MINOR @EDS_VERSION_MINOR@
+
+
+
+#endif /* _EDS_VERSION */
+

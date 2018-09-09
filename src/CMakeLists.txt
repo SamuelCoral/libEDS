@@ -18,4 +18,9 @@ configure_file (
 )
 
 add_executable (test_eds test.cpp)
-target_link_libraries (test_eds libEDS)
+add_executable (vector_field vector_field.cpp)
+add_executable (idx_img idx_img.c)
+target_link_libraries (test_eds EDS)
+target_link_libraries (vector_field EDS)
+target_link_libraries (idx_img EDS)
+target_link_libraries(idx_img m)
